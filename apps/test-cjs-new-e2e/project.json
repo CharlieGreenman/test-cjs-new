@@ -1,0 +1,29 @@
+{
+  "name": "test-cjs-new-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/test-cjs-new-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/test-cjs-new-e2e/cypress.json",
+        "devServerTarget": "test-cjs-new:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "test-cjs-new:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/test-cjs-new-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["test-cjs-new"]
+}
