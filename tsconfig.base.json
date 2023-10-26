@@ -44,6 +44,9 @@
       ],
       "@test-cjs-new/data-models": [
         "libs/data-models/src/index.ts"
+      ],
+      "@test-cjs-new/common/common-environment": [
+        "libs/common/common-environment/src/index.ts"
       ]
     }
   },
