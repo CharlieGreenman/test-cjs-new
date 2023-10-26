@@ -20,6 +20,9 @@
     "paths": {
       "@test-cjs-new/common/styles": [
         "libs/common/styles/src/index.ts"
+      ],
+      "@test-cjs-new/common/ui": [
+        "libs/common/ui/src/index.ts"
       ]
     }
   },
