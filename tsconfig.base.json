@@ -38,6 +38,9 @@
       ],
       "@test-cjs-new/data-services": [
         "libs/data-services/src/index.ts"
+      ],
+      "@test-cjs-new/data-graphql": [
+        "libs/data-graphql/src/index.ts"
       ]
     }
   },
