@@ -9,6 +9,7 @@ import { AuthService } from "@test-cjs-new/common/common-services";
 export class AppComponent {
   sideNavOpen = false;
   title = 'test-cjs-new';
+  user$ = this.authService.user$;
 
   sideNavToggle(): void {
     this.sideNavOpen = !this.sideNavOpen;

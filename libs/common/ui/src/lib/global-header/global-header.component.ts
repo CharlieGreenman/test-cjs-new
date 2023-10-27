@@ -15,7 +15,7 @@ import { Input } from "@angular/core";
 export class GlobalHeaderComponent implements OnInit {
   @Output() signUp: EventEmitter<void> = new EventEmitter();
   @Output() logIn: EventEmitter<void> = new EventEmitter();
-  @Input() authenticated = false;
+  @Input() authenticated: any = false;
   faUserCircle = faUserCircle;
   faQuestionCircle = faQuestionCircle;
   faBell = faBell;

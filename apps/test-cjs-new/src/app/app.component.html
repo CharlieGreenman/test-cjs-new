@@ -2,6 +2,7 @@
   (sideNavToggle)="sideNavToggle()"
   (logIn)="logIn()"
   (signUp)="signUp()"
+  [authenticated]="user$ | async"
 ></test-cjs-new-global-header>
 <div class="wrapper">
   <div class="container">
